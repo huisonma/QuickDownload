@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Context.getFilesDir() 位于/data/data/安装目录-->
+    <files-path
+        name="internal_path"
+        path="file" />
+    <!--Context.getCacheDir()-->
+    <cache-path
+        name="cache_path"
+        path="file" />
+    <!--Environment.getExternalStorageDirectory()-->
+    <external-path
+        name="external_path"
+        path="file" />
+    <!--Context.getExternalFilesDir(null)-->
+    <external-files-path
+        name="external_files"
+        path="download/apk" />
+</paths>
