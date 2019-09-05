@@ -19,12 +19,16 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.huison.download.BuildConfig;
-import com.huison.download.DownloadCallback;
-import com.huison.download.DownloadManager;
+//import com.huison.download.DownloadCallback;
+//import com.huison.download.DownloadManager;
 import com.huison.download.R;
 import com.huison.download.entry.DownloadBean;
-import com.huison.download.utils.FileUtil;
-import com.huison.download.utils.LogUtil;
+import com.huison.kotlin.download.DownloadCallback;
+import com.huison.kotlin.download.DownloadManager;
+import com.huison.kotlin.download.utils.FileUtil;
+import com.huison.kotlin.download.utils.LogUtil;
+//import com.huison.download.utils.FileUtil;
+//import com.huison.download.utils.LogUtil;
 
 import org.greenrobot.eventbus.EventBus;
 

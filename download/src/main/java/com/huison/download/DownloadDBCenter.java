@@ -122,10 +122,10 @@ class DownloadDBCenter {
                 String path = cursor.getString(cursor.getColumnIndex("path"));
                 long start = cursor.getLong(cursor.getColumnIndex("startByte"));
                 long end = cursor.getLong(cursor.getColumnIndex("endByte"));
-                int threadId = cursor.getInt(cursor.getColumnIndex("number"));
-                long progress = cursor.getLong(cursor.getColumnIndex("downloadedLength"));
+                int number = cursor.getInt(cursor.getColumnIndex("number"));
+                long downloadedLength = cursor.getLong(cursor.getColumnIndex("downloadedLength"));
                 long contentLength = cursor.getLong(cursor.getColumnIndex("totalLength"));
-                DownloadComponent component = new DownloadComponent(url, path, start, end, threadId, progress, contentLength);
+                DownloadComponent component = new DownloadComponent(url, path, start, end, number, downloadedLength, contentLength);
                 components.add(component);
             }
         } catch (Exception e) {

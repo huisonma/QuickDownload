@@ -7,7 +7,6 @@ import android.os.Build;
 import android.text.TextUtils;
 
 import com.huison.download.utils.FileUtil;
-import com.huison.download.utils.LogUtil;
 
 import java.io.File;
 import java.io.IOException;
@@ -236,7 +235,7 @@ public class DownloadManager {
         } else {
             for (DownloadComponent component : components) {
                 totalDownloadedLength += component.getDownloadedLength();
-                // 每天记录的totalLength都是一样的
+                // 每条记录的totalLength都是一样的
                 totalLength = component.getTotalLength();
             }
         }

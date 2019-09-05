@@ -1,1 +1,1 @@
-include ':app', ':download'
+include ':app', ':download', ':ktdownload'

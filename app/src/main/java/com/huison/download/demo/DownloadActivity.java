@@ -10,15 +10,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.huison.download.DownloadManager;
+//import com.huison.download.DownloadManager;
 import com.huison.download.R;
 import com.huison.download.entry.DownloadBean;
 import com.huison.download.entry.DownloadProvider;
-import com.huison.download.utils.FileUtil;
-import com.huison.download.utils.HandlerUtil;
+import com.huison.kotlin.download.DownloadManager;
+import com.huison.kotlin.download.utils.FileUtil;
+import com.huison.kotlin.download.utils.HandlerUtil;
+//import com.huison.download.utils.FileUtil;
+//import com.huison.download.utils.HandlerUtil;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;

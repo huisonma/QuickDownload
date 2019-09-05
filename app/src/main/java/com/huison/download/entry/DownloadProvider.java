@@ -2,8 +2,6 @@ package com.huison.download.entry;
 
 import android.content.Context;
 
-import com.huison.download.utils.CloseUtil;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -50,7 +48,13 @@ public class DownloadProvider {
             } catch (JSONException e) {
                 e.printStackTrace();
             } finally {
-                CloseUtil.close(reader);
+                if (reader != null) {
+                    try {
+                        reader.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
             }
         }
         return sDownloadBeans;

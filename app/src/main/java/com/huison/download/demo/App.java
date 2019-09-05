@@ -2,8 +2,11 @@ package com.huison.download.demo;
 
 import android.app.Application;
 
-import com.huison.download.DownloadManager;
-import com.huison.download.utils.LogUtil;
+import com.huison.kotlin.download.DownloadManager;
+import com.huison.kotlin.download.utils.LogUtil;
+
+//import com.huison.download.DownloadManager;
+//import com.huison.download.utils.LogUtil;
 
 /**
  * Created by huisonma on 2019/5/15.

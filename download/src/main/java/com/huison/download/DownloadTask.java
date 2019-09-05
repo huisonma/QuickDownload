@@ -150,7 +150,7 @@ class DownloadTask implements Runnable {
 
                     if (successNumber.get() == blockCount) {
                         int count = downloadManager.dbCenter().deleteComponents(url);
-                        LogUtil.d("onSuccess = delete count = " + count);
+                        LogUtil.d("onSuccess: delete count = " + count);
 
                         HandlerUtil.postOnUiThread(new Runnable() {
                             @Override
